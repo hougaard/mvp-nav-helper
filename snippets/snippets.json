@@ -1,5 +1,5 @@
 {
-        "Snippet: Table": {
+        "Snippet: EntryTable": {
         "prefix": "xentrytable",
         "body": [
             "table ${tableId:id} ${tableName:MyEntryTable}",
@@ -40,5 +40,69 @@
         ],
         "description": "Snippet: Entry Table"
     },
-
+    "snippet: flowfield_sum": {
+        "prefix": "xflowfieldsum",
+        "body": [
+            "\t\tfield(${1:10};${2:fieldName};Decimal)",
+            "\t\t{",
+            "\t\t\tCalcFormula=sum(${3:FlowTable}.${4:SumField} where (${5:FilterField}=field(${6:RelatedField})));",
+            "\t\t\tCaptionML=ENU='${7:Caption}';",
+            "\t\t\tEditable=false;",
+            "\t\t\tFieldClass=FlowField;",
+            "\t\t}"
+        ],
+        "description": "Snippet: Flowfield Sum"
+    },
+    "snippet: flowfield_count": {
+        "prefix": "xflowfieldcount",
+        "body": [
+            "\t\tfield(${1:10};${2:fieldName};Decimal)",
+            "\t\t{",
+            "\t\t\tCalcFormula=count(${3:FlowTable}.${4:SumField} where (${5:FilterField}=field(${6:RelatedField})));",
+            "\t\t\tCaptionML=ENU='${7:Caption}';",
+            "\t\t\tEditable=false;",
+            "\t\t\tFieldClass=FlowField;",
+            "\t\t}"
+        ],
+        "description": "Snippet: Flowfield Count"
+    },
+    "snippet: flowfield_min": {
+        "prefix": "xflowfieldmin",
+        "body": [
+            "\t\tfield(${1:10};${2:fieldName};Decimal)",
+            "\t\t{",
+            "\t\t\tCalcFormula=min(${3:FlowTable}.${4:SumField} where (${5:FilterField}=field(${6:RelatedField})));",
+            "\t\t\tCaptionML=ENU='${7:Caption}';",
+            "\t\t\tEditable=false;",
+            "\t\t\tFieldClass=FlowField;",
+            "\t\t}"
+        ],
+        "description": "Snippet: Flowfield Min"
+    },
+    "snippet: flowfield_max": {
+        "prefix": "xflowfieldmax",
+        "body": [
+            "\t\tfield(${1:10};${2:fieldName};Decimal)",
+            "\t\t{",
+            "\t\t\tCalcFormula=max(${3:FlowTable}.${4:SumField} where (${5:FilterField}=field(${6:RelatedField})));",
+            "\t\t\tCaptionML=ENU='${7:Caption}';",
+            "\t\t\tEditable=false;",
+            "\t\t\tFieldClass=FlowField;",
+            "\t\t}"
+        ],
+        "description": "Snippet: Flowfield Max"
+    },
+        "snippet: flowfield_lookup": {
+        "prefix": "xflowfieldlookup",
+        "body": [
+            "\t\tfield(${1:10};${2:fieldName};${3:fieldType})",
+            "\t\t{",
+            "\t\t\tCalcFormula=lookup(${4:LookupTable}.${5:LookupField} where (${6:FilterField}=field(${7:RelatedField})));",
+            "\t\t\tCaptionML=ENU='${8:Caption}';",
+            "\t\t\tEditable=false;",
+            "\t\t\tFieldClass=FlowField;",
+            "\t\t}"
+        ],
+        "description": "Snippet: Flowfield Lookup"
+    }    
 }
