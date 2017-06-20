@@ -1,6 +1,10 @@
-# eriks-nav-helper README
+# mvp-nav-helper README
 
-Erik's NAV Helper is a collection of useful snippets and tools for making NAV development easier.
+MVP NAV Helper is a collection of useful snippets and tools for making NAV development easier.
+
+https://github.com/hougaard/mvp-nav-helper
+
+Maintained by Erik Hougaard
 
 ## Features
 

@@ -4,6 +4,7 @@
     "description": "Helping Dynamics NAV developers using Visual Studio Code",
     "version": "0.0.1",
     "publisher": "hougaard",
+    "icon": "img/mvplogo.png",
     "engines": {
         "vscode": "^1.13.0"
     },
@@ -16,6 +17,13 @@
                 "language": "al",
                 "path": "./snippets/snippets.json"
             }
+        ],
+        "commands": [
+			{
+				"title": "Test!",
+				"command": "mvpnav.test",
+				"category": "mvpnav"
+			}
         ]
     }
 }
