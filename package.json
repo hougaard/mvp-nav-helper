@@ -1,6 +1,6 @@
 {
-    "name": "eriks-nav-helper",
-    "displayName": "Eriks NAV Helper",
+    "name": "mvp-nav-helper",
+    "displayName": "MVP NAV Helper",
     "description": "Helping Dynamics NAV developers using Visual Studio Code",
     "version": "0.0.1",
     "publisher": "hougaard",
